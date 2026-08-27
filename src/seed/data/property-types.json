@@ -1,0 +1,26 @@
+{
+  "sale": [
+    { "type": "apartment", "weight": 45 },
+    { "type": "villa", "weight": 20 },
+    { "type": "townhouse", "weight": 15 },
+    { "type": "penthouse", "weight": 5 },
+    { "type": "office", "weight": 8 },
+    { "type": "retail", "weight": 4 },
+    { "type": "land", "weight": 3 }
+  ],
+  "rental": [
+    { "type": "apartment", "weight": 60 },
+    { "type": "villa", "weight": 15 },
+    { "type": "townhouse", "weight": 12 },
+    { "type": "penthouse", "weight": 3 },
+    { "type": "office", "weight": 6 },
+    { "type": "retail", "weight": 4 }
+  ],
+  "off_plan": [
+    { "type": "apartment", "weight": 55 },
+    { "type": "villa", "weight": 15 },
+    { "type": "townhouse", "weight": 20 },
+    { "type": "penthouse", "weight": 10 }
+  ],
+  "developers": ["Emaar", "Damac", "Sobha", "Nakheel", "Meraas", "Azizi", "Danube", "Binghatti"]
+}

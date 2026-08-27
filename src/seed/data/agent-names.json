@@ -1,0 +1,82 @@
+[
+  {
+    "agentId": "AG-001",
+    "name": "Ahmed Al Mansouri",
+    "nationality": "Emirati",
+    "languages": ["Arabic", "English"],
+    "specialization": "sales",
+    "communities": ["Downtown Dubai", "Business Bay"],
+    "tier": "senior",
+    "performanceLevel": "top"
+  },
+  {
+    "agentId": "AG-002",
+    "name": "Sarah Mitchell",
+    "nationality": "British",
+    "languages": ["English"],
+    "specialization": "sales",
+    "communities": ["Dubai Marina", "JBR", "Palm Jumeirah"],
+    "tier": "senior",
+    "performanceLevel": "strong"
+  },
+  {
+    "agentId": "AG-003",
+    "name": "Rajesh Krishnan",
+    "nationality": "Indian",
+    "languages": ["English", "Hindi", "Malayalam"],
+    "specialization": "rentals",
+    "communities": ["JVC", "Silicon Oasis", "Sports City"],
+    "tier": "mid",
+    "performanceLevel": "strong-volume"
+  },
+  {
+    "agentId": "AG-004",
+    "name": "Fatima Al Hashimi",
+    "nationality": "Emirati",
+    "languages": ["Arabic", "English"],
+    "specialization": "off-plan",
+    "communities": ["MBR City", "Dubai Hills", "Mohammed Bin Rashid City (MJL)"],
+    "tier": "mid",
+    "performanceLevel": "average"
+  },
+  {
+    "agentId": "AG-005",
+    "name": "Dmitry Volkov",
+    "nationality": "Russian",
+    "languages": ["Russian", "English"],
+    "specialization": "sales",
+    "communities": ["Palm Jumeirah", "Emirates Hills", "District One"],
+    "tier": "senior",
+    "performanceLevel": "strong-luxury"
+  },
+  {
+    "agentId": "AG-006",
+    "name": "Priya Sharma",
+    "nationality": "Indian",
+    "languages": ["English", "Hindi"],
+    "specialization": "rentals",
+    "communities": ["Deira", "Bur Dubai", "Al Nahda"],
+    "tier": "mid",
+    "performanceLevel": "average"
+  },
+  {
+    "agentId": "AG-007",
+    "name": "Omar Youssef",
+    "nationality": "Egyptian",
+    "languages": ["Arabic", "English"],
+    "specialization": "mixed",
+    "communities": ["Al Furjan", "Discovery Gardens", "JLT"],
+    "tier": "junior",
+    "performanceLevel": "below-average"
+  },
+  {
+    "agentId": "AG-008",
+    "name": "Li Wei",
+    "nationality": "Chinese",
+    "languages": ["Mandarin", "English"],
+    "specialization": "off-plan",
+    "communities": ["Creek Harbour", "Mohammed Bin Rashid City (MJL)", "Dubai South"],
+    "tier": "junior",
+    "performanceLevel": "ramping"
+  }
+]

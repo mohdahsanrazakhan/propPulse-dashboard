@@ -1,0 +1,23 @@
+[
+  { "name": "Dubai Marina", "dealsPercent": 15, "avgSalePrice": 1500000, "avgRent": 95000 },
+  { "name": "Downtown Dubai", "dealsPercent": 10, "avgSalePrice": 2200000, "avgRent": 130000 },
+  { "name": "JVC", "dealsPercent": 12, "avgSalePrice": 750000, "avgRent": 45000 },
+  { "name": "Business Bay", "dealsPercent": 10, "avgSalePrice": 1100000, "avgRent": 70000 },
+  { "name": "Palm Jumeirah", "dealsPercent": 5, "avgSalePrice": 4500000, "avgRent": 180000 },
+  { "name": "Dubai Hills", "dealsPercent": 8, "avgSalePrice": 2800000, "avgRent": 150000 },
+  { "name": "JBR", "dealsPercent": 6, "avgSalePrice": 1800000, "avgRent": 110000 },
+  { "name": "Sports City", "dealsPercent": 7, "avgSalePrice": 550000, "avgRent": 35000 },
+  { "name": "Silicon Oasis", "dealsPercent": 6, "avgSalePrice": 600000, "avgRent": 38000 },
+  { "name": "MBR City", "dealsPercent": 5, "avgSalePrice": 1200000, "avgRent": 75000 },
+  { "name": "Creek Harbour", "dealsPercent": 4, "avgSalePrice": 1600000, "avgRent": 90000 },
+  { "name": "Al Furjan", "dealsPercent": 1.3, "avgSalePrice": 900000, "avgRent": 60000 },
+  { "name": "Discovery Gardens", "dealsPercent": 1.3, "avgSalePrice": 550000, "avgRent": 42000 },
+  { "name": "JLT", "dealsPercent": 1.3, "avgSalePrice": 1000000, "avgRent": 65000 },
+  { "name": "Deira", "dealsPercent": 1.3, "avgSalePrice": 700000, "avgRent": 40000 },
+  { "name": "Bur Dubai", "dealsPercent": 1.1, "avgSalePrice": 650000, "avgRent": 38000 },
+  { "name": "Al Nahda", "dealsPercent": 1.1, "avgSalePrice": 600000, "avgRent": 36000 },
+  { "name": "Emirates Hills", "dealsPercent": 1.2, "avgSalePrice": 6500000, "avgRent": 220000 },
+  { "name": "District One", "dealsPercent": 1.1, "avgSalePrice": 5200000, "avgRent": 200000 },
+  { "name": "Mohammed Bin Rashid City (MJL)", "dealsPercent": 1.1, "avgSalePrice": 1900000, "avgRent": 105000 },
+  { "name": "Dubai South", "dealsPercent": 1.1, "avgSalePrice": 850000, "avgRent": 55000 }
+]

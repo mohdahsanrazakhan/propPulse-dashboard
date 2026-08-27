@@ -1,0 +1,493 @@
+{
+  "meta": {
+    "title": "PropPulse: Real Estate Agent Performance Dashboard",
+    "description": "Know your numbers. Close more deals."
+  },
+  "common": {
+    "brand": "PropPulse",
+    "tagline": "Know your numbers. Close more deals.",
+    "language": "Language",
+    "english": "English",
+    "arabic": "Arabic",
+    "logout": "Logout",
+    "reraBrn": "RERA BRN: {brn}"
+  },
+  "nav": {
+    "overview": "Overview",
+    "agents": "Agents",
+    "pipeline": "Pipeline",
+    "leads": "Lead Sources",
+    "commission": "Commission",
+    "communities": "Communities",
+    "insights": "Insights",
+    "settings": "Settings"
+  },
+  "sidebar": {
+    "expandSidebar": "Expand sidebar",
+    "collapseSidebar": "Collapse sidebar",
+    "mainMenu": "Main menu"
+  },
+  "header": {
+    "agency": "Agency"
+  },
+  "notifications": {
+    "label": "Notifications",
+    "labelWithCount": "{count} notifications",
+    "empty": "You're all caught up"
+  },
+  "mobileNav": {
+    "srNavigation": "Navigation"
+  },
+  "login": {
+    "signInHeading": "Sign in to your agency",
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Sign in",
+    "demoCredentials": "Demo credentials",
+    "demoEmail": "Email: {email}",
+    "demoPassword": "Password: {password}",
+    "errorRateLimited": "Too many login attempts. Please try again later.",
+    "errorInvalid": "Invalid email or password."
+  },
+  "labels": {
+    "dealType": {
+      "sale": "Sale",
+      "rental": "Rental",
+      "off_plan": "Off-Plan"
+    },
+    "dealStage": {
+      "prospect": "Prospect",
+      "viewing": "Viewing",
+      "offer": "Offer",
+      "negotiation": "Negotiation",
+      "agreed": "Agreed",
+      "documentation": "Documentation",
+      "transfer": "Transfer",
+      "completed": "Completed",
+      "fallen_through": "Fallen Through"
+    },
+    "commissionStatus": {
+      "pending": "Pending",
+      "invoiced": "Invoiced",
+      "partially_paid": "Partially Paid",
+      "paid": "Paid",
+      "overdue": "Overdue"
+    },
+    "leadSource": {
+      "bayut": "Bayut",
+      "property_finder": "Property Finder",
+      "dubizzle": "Dubizzle",
+      "website": "Website/SEO",
+      "walk_in": "Walk-in",
+      "referral": "Referral",
+      "social_media": "Social Media",
+      "cold_call": "Cold Call"
+    },
+    "lossReason": {
+      "budget_mismatch": "Budget mismatch",
+      "not_ready": "Not ready",
+      "chose_competitor": "Chose competitor",
+      "unresponsive": "Unresponsive",
+      "left_dubai": "Left Dubai",
+      "no_requirement": "No real requirement"
+    },
+    "funnelStage": {
+      "leads": "Leads",
+      "contacted": "Contacted",
+      "qualified": "Qualified",
+      "viewing": "Viewing",
+      "offer": "Offer",
+      "negotiation": "Negotiation",
+      "agreed": "Agreed",
+      "completed": "Completed"
+    }
+  },
+  "dashboard": {
+    "loading": "Loading agency overview...",
+    "loadError": "Failed to load dashboard.",
+    "kpi": {
+      "totalRevenue": "Total Revenue",
+      "dealsClosed": "Deals Closed",
+      "activePipelineValue": "Active Pipeline Value",
+      "leadConversionRate": "Lead Conversion Rate",
+      "avgDaysToClose": "Avg Days to Close"
+    },
+    "revenueTrend": {
+      "title": "Revenue Trend",
+      "subtitle": "Commission earned by deal type, last 12 months",
+      "sales": "Sales",
+      "rentals": "Rentals",
+      "offPlan": "Off-plan"
+    },
+    "dealTypeMix": {
+      "title": "Deal Type Mix",
+      "subtitle": "Completed deals by type",
+      "totalDeals": "Total deals",
+      "dealsSuffix": "{count} deals"
+    },
+    "topAgents": {
+      "title": "Top Agents",
+      "subtitle": "Ranked by commission earned",
+      "dealsAndConversion": "{deals} deals · {conversion}% conversion",
+      "viewAll": "View all agents"
+    },
+    "leadSourceRoi": {
+      "title": "Lead Source ROI",
+      "subtitle": "Leads received vs deals closed, colored by conversion",
+      "leads": "Leads",
+      "tooltipDeals": "{deals} deals ({rate}% conv.)"
+    },
+    "pipelineFunnel": {
+      "title": "Deal Pipeline Funnel",
+      "subtitle": "Conversion at each stage"
+    },
+    "quickAlerts": {
+      "title": "Quick Alerts",
+      "subtitle": "Things that need your attention",
+      "emptyTitle": "No alerts",
+      "emptyDescription": "Everything looks on track."
+    }
+  },
+  "table": {
+    "noRecordsFound": "No records found"
+  },
+  "agents": {
+    "loading": "Loading agent performance...",
+    "loadError": "Failed to load agents.",
+    "specializationPlaceholder": "Specialization",
+    "allSpecializations": "All specializations",
+    "statusPlaceholder": "Status",
+    "allStatuses": "All statuses",
+    "active": "Active",
+    "inactive": "Inactive",
+    "specializations": {
+      "sales": "Sales",
+      "rentals": "Rentals",
+      "off-plan": "Off-plan",
+      "commercial": "Commercial",
+      "mixed": "Mixed"
+    },
+    "comparison": {
+      "title": "Agent Performance Comparison",
+      "subtitle": "Spot your top and bottom performers",
+      "dealsClosed": "Deals Closed",
+      "commissionEarned": "Commission Earned",
+      "conversionRate": "Conversion Rate",
+      "avgResponseTime": "Avg Response Time"
+    },
+    "table": {
+      "agent": "Agent",
+      "dealsMonth": "Deals (month)",
+      "targetProgress": "Target Progress",
+      "commissionMonth": "Commission (month)",
+      "commissionYtd": "Commission (YTD)",
+      "leadsAssigned": "Leads Assigned",
+      "conversion": "Conversion",
+      "avgResponse": "Avg Response",
+      "avgDaysToClose": "Avg Days to Close",
+      "rating": "Rating"
+    },
+    "detail": {
+      "loading": "Loading agent profile...",
+      "notFound": "Agent not found.",
+      "reraId": "RERA ID: {reraId}",
+      "memberSince": "Member since {date}",
+      "totalDeals": "Total deals",
+      "totalCommission": "Total commission",
+      "avgRating": "Avg rating"
+    },
+    "targetProgress": {
+      "title": "Target vs Actual: This Month",
+      "deals": "Deals",
+      "commission": "Commission",
+      "responseTime": "Response Time",
+      "responseTargetSuffix": "{minutes}min target"
+    },
+    "trend": {
+      "title": "Performance Trend: 12 Months",
+      "subtitle": "Deals closed per month vs agency average",
+      "thisAgent": "This agent",
+      "agencyAverage": "Agency average"
+    },
+    "dealHistory": {
+      "title": "Deal History",
+      "allTypes": "All types",
+      "allCommunities": "All communities",
+      "dealId": "Deal ID",
+      "type": "Type",
+      "community": "Community",
+      "value": "Value",
+      "commission": "Commission",
+      "stage": "Stage",
+      "date": "Date"
+    },
+    "leadConversion": {
+      "title": "Lead Conversion Funnel",
+      "subtitle": "This agent vs agency average (marker line)",
+      "contacted": "Contacted",
+      "qualified": "Qualified",
+      "viewing": "Viewing",
+      "won": "Won",
+      "agencyComparison": "(agency {value}%)"
+    },
+    "commissionBreakdown": {
+      "byType": "By Deal Type",
+      "monthlyCommission": "Monthly Commission",
+      "commission": "Commission",
+      "paid": "Paid",
+      "pending": "Pending"
+    },
+    "assessment": {
+      "title": "AI Agent Assessment",
+      "subtitle": "Generated from this agent's performance data",
+      "generate": "Generate",
+      "regenerate": "Regenerate",
+      "prompt": "Click \"Generate\" to get an AI-written summary of this agent's strengths and a recommendation.",
+      "genericError": "Failed to generate assessment"
+    }
+  },
+  "pipeline": {
+    "loading": "Loading pipeline...",
+    "loadError": "Failed to load pipeline.",
+    "kpi": {
+      "totalPipelineValue": "Total Pipeline Value",
+      "expectedCommission": "Expected Commission",
+      "avgDealAge": "Avg Deal Age",
+      "dealsAtRisk": "Deals at Risk",
+      "winRate": "Win Rate (6mo)"
+    },
+    "allTypes": "All types",
+    "allAgents": "All agents",
+    "allCommunities": "All communities",
+    "unassigned": "Unassigned",
+    "boardView": "Board",
+    "tableView": "Table",
+    "noDeals": "No deals",
+    "dealsCount": "{count} deals",
+    "table": {
+      "dealId": "Deal ID",
+      "type": "Type",
+      "property": "Property",
+      "client": "Client",
+      "agent": "Agent",
+      "value": "Value",
+      "commission": "Commission",
+      "stage": "Stage",
+      "daysInStage": "Days in Stage"
+    },
+    "detail": {
+      "propertySection": "Property",
+      "clientAgentSection": "Client & Agent",
+      "financialSection": "Financial Breakdown",
+      "notesSection": "Notes",
+      "type": "Type",
+      "community": "Community",
+      "building": "Building",
+      "unit": "Unit",
+      "bedrooms": "Bedrooms",
+      "sqft": "Sqft",
+      "developer": "Developer",
+      "client": "Client",
+      "nationality": "Nationality",
+      "agent": "Agent",
+      "cobroker": "Co-broker",
+      "transactionValue": "Transaction value",
+      "commissionRate": "Commission rate",
+      "grossCommission": "Gross commission",
+      "vat": "VAT (5%)",
+      "agentSplit": "Agent split",
+      "agentEarns": "Agent earns",
+      "agencyKeeps": "Agency keeps",
+      "status": "Status",
+      "daysInCurrentStage": "Days in current stage",
+      "daysSuffix": "{count} days"
+    }
+  },
+  "leads": {
+    "loading": "Loading lead source analytics...",
+    "loadError": "Failed to load lead analytics.",
+    "sourceOverview": {
+      "title": "Lead Source Overview",
+      "totalLeads": "{count} total leads",
+      "leadsSuffix": "{count} leads"
+    },
+    "qualityMatrix": {
+      "title": "Source Quality Matrix",
+      "subtitle": "Volume vs conversion. Bubble size is commission earned. Top-right is your best source.",
+      "leadsReceived": "Leads received",
+      "conversionPercent": "Conversion %",
+      "leadsAndConversion": "{leads} leads · {rate}% conversion",
+      "commissionSuffix": "AED {amount} commission"
+    },
+    "portalRoi": {
+      "title": "Portal ROI Comparison",
+      "subtitle": "Where should you spend your portal budget?",
+      "source": "Source",
+      "leads": "Leads",
+      "deals": "Deals",
+      "conversion": "Conversion",
+      "avgDealValue": "Avg Deal Value",
+      "commissionEarned": "Commission Earned",
+      "estMonthlyCost": "Est. Monthly Cost",
+      "roi": "ROI"
+    },
+    "responseTime": {
+      "title": "Response Time Impact",
+      "subtitle": "Conversion rate by response speed",
+      "conversion": "Conversion",
+      "tip": "Leads contacted within 5 minutes convert 3x more. Train agents to respond faster."
+    },
+    "trend": {
+      "title": "Lead Trend Over Time",
+      "subtitle": "Leads received per month by source"
+    },
+    "lossAnalysis": {
+      "title": "Lead Loss Analysis",
+      "subtitle": "Why leads are lost",
+      "count": "Count",
+      "leadsSuffix": "{count} leads"
+    }
+  },
+  "commission": {
+    "loading": "Loading commission data...",
+    "loadError": "Failed to load commission data.",
+    "summary": {
+      "totalYtd": "Total Commission (YTD)",
+      "thisMonth": "This Month",
+      "pendingCollection": "Pending Collection",
+      "overdue": "Overdue (30+ days)"
+    },
+    "byAgent": {
+      "title": "Commission by Agent (YTD)",
+      "subtitle": "Paid vs pending vs overdue",
+      "paid": "Paid",
+      "pending": "Pending",
+      "overdue": "Overdue"
+    },
+    "calculator": {
+      "title": "Commission Calculator",
+      "dealType": "Deal Type",
+      "propertyValue": "Property Value (AED)",
+      "commissionRate": "Commission Rate (%)",
+      "agentSplit": "Agent Split (%)",
+      "isCobroker": "Co-broker Deal?",
+      "no": "No",
+      "yes": "Yes",
+      "cobrokerSplit": "Co-broker Split (%)",
+      "grossCommission": "Gross Commission",
+      "vat": "VAT (5%)",
+      "totalWithVat": "Total with VAT",
+      "cobrokerPays": "Co-broker Pays",
+      "agentEarns": "Agent Earns",
+      "agencyKeeps": "Agency Keeps"
+    },
+    "timeline": {
+      "title": "Commission Timeline",
+      "subtitle": "Monthly commission by deal type, with growth trend",
+      "sales": "Sales",
+      "rentals": "Rentals",
+      "offPlan": "Off-plan",
+      "total": "Total"
+    },
+    "pendingPayments": {
+      "title": "Pending Payments",
+      "dealId": "Deal ID",
+      "property": "Property",
+      "client": "Client",
+      "agent": "Agent",
+      "commission": "Commission",
+      "invoiceNumber": "Invoice #",
+      "status": "Status",
+      "dueDate": "Due Date",
+      "daysOverdue": "({count}d overdue)"
+    }
+  },
+  "communities": {
+    "loading": "Loading community analytics...",
+    "loadError": "Failed to load community data.",
+    "table": {
+      "community": "Community",
+      "totalDeals": "Total Deals",
+      "avgSalePrice": "Avg Sale Price",
+      "avgRent": "Avg Rent",
+      "activeListings": "Active Listings",
+      "avgDaysToClose": "Avg Days to Close",
+      "topAgent": "Top Agent",
+      "trend": "Trend",
+      "dealMixTitle": "{community}: deal mix",
+      "sales": "Sales",
+      "rentals": "Rentals",
+      "offPlan": "Off-plan"
+    },
+    "heatmap": {
+      "title": "Community Heatmap",
+      "subtitle": "Size = deal volume, color intensity = avg commission earned",
+      "tooltip": "{community}: {deals} deals, AED {commission} avg commission"
+    },
+    "priceTrend": {
+      "title": "Price Trends by Community",
+      "subtitle": "Avg sale price per sqft, last 12 months (select up to 5)",
+      "tooltipSuffix": "AED {value}/sqft"
+    },
+    "dealTypeByCommunity": {
+      "title": "Deal Type by Community",
+      "subtitle": "Top 10 communities by volume",
+      "sale": "Sale",
+      "rental": "Rental",
+      "offPlan": "Off-plan"
+    }
+  },
+  "insights": {
+    "loading": "Loading insights...",
+    "loadError": "Failed to load insights.",
+    "genericError": "Failed to generate insights",
+    "title": "AI Performance Insights",
+    "subtitle": "Auto-generated recommendations from your agency data",
+    "generateButton": "Generate New Insights",
+    "emptyTitle": "No insights yet",
+    "emptyDescription": "Click 'Generate New Insights' to get started.",
+    "recommendation": "Recommendation: ",
+    "severity": {
+      "opportunity": "Opportunity",
+      "critical": "Critical",
+      "warning": "Warning",
+      "info": "Info"
+    }
+  },
+  "settings": {
+    "agencyInfo": {
+      "title": "Agency Info",
+      "companyName": "Company Name",
+      "reraBrn": "RERA BRN"
+    },
+    "commissionDefaults": {
+      "title": "Commission Defaults",
+      "saleRate": "Sale Rate (%)",
+      "rentalRate": "Rental Rate (%)",
+      "defaultAgentSplit": "Default Agent Split (%)"
+    },
+    "monthlyTargets": {
+      "title": "Monthly Targets (per agent)",
+      "dealsPerAgent": "Deals per Agent",
+      "commissionPerAgent": "Commission per Agent (AED)"
+    },
+    "displayAlerts": {
+      "title": "Display & Alerts",
+      "currencyDisplay": "Currency Display",
+      "responseTimeTarget": "Response Time Target (minutes)"
+    },
+    "save": "Save Settings",
+    "saved": "Saved",
+    "dangerZone": {
+      "title": "Danger Zone",
+      "description": "Wipes all agents, leads, deals, and insights, then regenerates fresh demo data. This cannot be undone.",
+      "resetSuccess": "Demo data has been reset. Refresh any open pages to see the new data.",
+      "resetButton": "Reset Demo Data",
+      "genericError": "Failed to reset demo data",
+      "confirmTitle": "Reset all demo data?",
+      "confirmDescription": "This permanently deletes all current agents, leads, deals, and insights, then generates a fresh demo dataset. This action cannot be undone.",
+      "cancel": "Cancel",
+      "confirmButton": "Yes, reset data"
+    }
+  }
+}

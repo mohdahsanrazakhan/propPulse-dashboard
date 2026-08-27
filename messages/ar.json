@@ -1,0 +1,493 @@
+{
+  "meta": {
+    "title": "PropPulse: لوحة تحكم أداء الوسطاء العقاريين",
+    "description": "افهم أرقامك... أغلق صفقات أكثر."
+  },
+  "common": {
+    "brand": "PropPulse",
+    "tagline": "افهم أرقامك... أغلق صفقات أكثر.",
+    "language": "اللغة",
+    "english": "الإنجليزية",
+    "arabic": "العربية",
+    "logout": "تسجيل الخروج",
+    "reraBrn": "رقم الرخصة RERA BRN: {brn}"
+  },
+  "nav": {
+    "overview": "نظرة عامة",
+    "agents": "الوسطاء",
+    "pipeline": "مسار الصفقات",
+    "leads": "مصادر العملاء المحتملين",
+    "commission": "العمولة",
+    "communities": "المجتمعات",
+    "insights": "الرؤى",
+    "settings": "الإعدادات"
+  },
+  "sidebar": {
+    "expandSidebar": "توسيع الشريط الجانبي",
+    "collapseSidebar": "طي الشريط الجانبي",
+    "mainMenu": "القائمة الرئيسية"
+  },
+  "header": {
+    "agency": "الوكالة"
+  },
+  "notifications": {
+    "label": "الإشعارات",
+    "labelWithCount": "{count} إشعارات",
+    "empty": "لا يوجد ما يستدعي انتباهك الآن"
+  },
+  "mobileNav": {
+    "srNavigation": "التنقل"
+  },
+  "login": {
+    "signInHeading": "تسجيل الدخول إلى حساب وكالتك",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "signIn": "تسجيل الدخول",
+    "demoCredentials": "بيانات الدخول التجريبية",
+    "demoEmail": "البريد الإلكتروني: {email}",
+    "demoPassword": "كلمة المرور: {password}",
+    "errorRateLimited": "محاولات دخول كثيرة جدًا. يرجى المحاولة مرة أخرى لاحقًا.",
+    "errorInvalid": "البريد الإلكتروني أو كلمة المرور غير صحيحة."
+  },
+  "labels": {
+    "dealType": {
+      "sale": "بيع",
+      "rental": "إيجار",
+      "off_plan": "على الخارطة"
+    },
+    "dealStage": {
+      "prospect": "عميل محتمل",
+      "viewing": "معاينة",
+      "offer": "عرض",
+      "negotiation": "تفاوض",
+      "agreed": "اتفاق",
+      "documentation": "توثيق",
+      "transfer": "نقل الملكية",
+      "completed": "مكتمل",
+      "fallen_through": "ملغاة"
+    },
+    "commissionStatus": {
+      "pending": "معلّقة",
+      "invoiced": "تم إصدار فاتورة",
+      "partially_paid": "مدفوعة جزئيًا",
+      "paid": "مدفوعة",
+      "overdue": "متأخرة"
+    },
+    "leadSource": {
+      "bayut": "Bayut",
+      "property_finder": "Property Finder",
+      "dubizzle": "Dubizzle",
+      "website": "الموقع الإلكتروني",
+      "walk_in": "زيارة مباشرة",
+      "referral": "إحالة",
+      "social_media": "وسائل التواصل الاجتماعي",
+      "cold_call": "اتصال مباشر"
+    },
+    "lossReason": {
+      "budget_mismatch": "عدم توافق الميزانية",
+      "not_ready": "غير جاهز",
+      "chose_competitor": "اختار منافسًا",
+      "unresponsive": "لا يستجيب",
+      "left_dubai": "غادر دبي",
+      "no_requirement": "لا يوجد احتياج فعلي"
+    },
+    "funnelStage": {
+      "leads": "العملاء المحتملون",
+      "contacted": "تم التواصل",
+      "qualified": "مؤهل",
+      "viewing": "معاينة",
+      "offer": "عرض",
+      "negotiation": "تفاوض",
+      "agreed": "اتفاق",
+      "completed": "مكتمل"
+    }
+  },
+  "dashboard": {
+    "loading": "جارٍ تحميل نظرة عامة على الوكالة...",
+    "loadError": "تعذّر تحميل لوحة التحكم.",
+    "kpi": {
+      "totalRevenue": "إجمالي الإيرادات",
+      "dealsClosed": "الصفقات المُغلقة",
+      "activePipelineValue": "قيمة المسار النشط",
+      "leadConversionRate": "معدل تحويل العملاء المحتملين",
+      "avgDaysToClose": "متوسط أيام الإغلاق"
+    },
+    "revenueTrend": {
+      "title": "اتجاه الإيرادات",
+      "subtitle": "العمولة المكتسبة حسب نوع الصفقة، آخر 12 شهرًا",
+      "sales": "المبيعات",
+      "rentals": "الإيجارات",
+      "offPlan": "على الخارطة"
+    },
+    "dealTypeMix": {
+      "title": "توزيع أنواع الصفقات",
+      "subtitle": "الصفقات المكتملة حسب النوع",
+      "totalDeals": "إجمالي الصفقات",
+      "dealsSuffix": "{count} صفقة"
+    },
+    "topAgents": {
+      "title": "أفضل الوسطاء",
+      "subtitle": "مرتبون حسب العمولة المكتسبة",
+      "dealsAndConversion": "{deals} صفقة · {conversion}% تحويل",
+      "viewAll": "عرض جميع الوسطاء"
+    },
+    "leadSourceRoi": {
+      "title": "عائد مصادر العملاء المحتملين",
+      "subtitle": "العملاء المحتملون مقابل الصفقات المغلقة، ملوّنة حسب معدل التحويل",
+      "leads": "العملاء المحتملون",
+      "tooltipDeals": "{deals} صفقة ({rate}% تحويل)"
+    },
+    "pipelineFunnel": {
+      "title": "قمع مسار الصفقات",
+      "subtitle": "التحويل في كل مرحلة"
+    },
+    "quickAlerts": {
+      "title": "تنبيهات سريعة",
+      "subtitle": "أمور تحتاج انتباهك",
+      "emptyTitle": "لا توجد تنبيهات",
+      "emptyDescription": "كل شيء يسير على ما يرام."
+    }
+  },
+  "table": {
+    "noRecordsFound": "لا توجد سجلات"
+  },
+  "agents": {
+    "loading": "جارٍ تحميل أداء الوسطاء...",
+    "loadError": "تعذّر تحميل بيانات الوسطاء.",
+    "specializationPlaceholder": "التخصص",
+    "allSpecializations": "جميع التخصصات",
+    "statusPlaceholder": "الحالة",
+    "allStatuses": "جميع الحالات",
+    "active": "نشط",
+    "inactive": "غير نشط",
+    "specializations": {
+      "sales": "المبيعات",
+      "rentals": "الإيجارات",
+      "off-plan": "على الخارطة",
+      "commercial": "تجاري",
+      "mixed": "متنوع"
+    },
+    "comparison": {
+      "title": "مقارنة أداء الوسطاء",
+      "subtitle": "تعرّف على أفضل وأضعف الوسطاء أداءً",
+      "dealsClosed": "الصفقات المُغلقة",
+      "commissionEarned": "العمولة المكتسبة",
+      "conversionRate": "معدل التحويل",
+      "avgResponseTime": "متوسط وقت الاستجابة"
+    },
+    "table": {
+      "agent": "الوسيط",
+      "dealsMonth": "الصفقات (الشهر)",
+      "targetProgress": "تقدم الهدف",
+      "commissionMonth": "العمولة (الشهر)",
+      "commissionYtd": "العمولة (السنة حتى الآن)",
+      "leadsAssigned": "العملاء المحتملون المُسندون",
+      "conversion": "التحويل",
+      "avgResponse": "متوسط الاستجابة",
+      "avgDaysToClose": "متوسط أيام الإغلاق",
+      "rating": "التقييم"
+    },
+    "detail": {
+      "loading": "جارٍ تحميل ملف الوسيط...",
+      "notFound": "لم يتم العثور على الوسيط.",
+      "reraId": "الرقم التعريفي RERA: {reraId}",
+      "memberSince": "عضو منذ {date}",
+      "totalDeals": "إجمالي الصفقات",
+      "totalCommission": "إجمالي العمولة",
+      "avgRating": "متوسط التقييم"
+    },
+    "targetProgress": {
+      "title": "الهدف مقابل الفعلي: هذا الشهر",
+      "deals": "الصفقات",
+      "commission": "العمولة",
+      "responseTime": "وقت الاستجابة",
+      "responseTargetSuffix": "الهدف {minutes} دقيقة"
+    },
+    "trend": {
+      "title": "اتجاه الأداء: 12 شهرًا",
+      "subtitle": "الصفقات المُغلقة شهريًا مقابل متوسط الوكالة",
+      "thisAgent": "هذا الوسيط",
+      "agencyAverage": "متوسط الوكالة"
+    },
+    "dealHistory": {
+      "title": "سجل الصفقات",
+      "allTypes": "جميع الأنواع",
+      "allCommunities": "جميع المجتمعات",
+      "dealId": "رقم الصفقة",
+      "type": "النوع",
+      "community": "المجتمع",
+      "value": "القيمة",
+      "commission": "العمولة",
+      "stage": "المرحلة",
+      "date": "التاريخ"
+    },
+    "leadConversion": {
+      "title": "قمع تحويل العملاء المحتملين",
+      "subtitle": "هذا الوسيط مقابل متوسط الوكالة (الخط الفاصل)",
+      "contacted": "تم التواصل",
+      "qualified": "مؤهل",
+      "viewing": "معاينة",
+      "won": "فوز",
+      "agencyComparison": "(الوكالة {value}%)"
+    },
+    "commissionBreakdown": {
+      "byType": "حسب نوع الصفقة",
+      "monthlyCommission": "العمولة الشهرية",
+      "commission": "العمولة",
+      "paid": "مدفوعة",
+      "pending": "معلّقة"
+    },
+    "assessment": {
+      "title": "تقييم الوسيط بالذكاء الاصطناعي",
+      "subtitle": "مُنشأ من بيانات أداء هذا الوسيط",
+      "generate": "إنشاء",
+      "regenerate": "إعادة الإنشاء",
+      "prompt": "اضغط على \"إنشاء\" للحصول على ملخص من الذكاء الاصطناعي لنقاط قوة هذا الوسيط وتوصية.",
+      "genericError": "تعذّر إنشاء التقييم"
+    }
+  },
+  "pipeline": {
+    "loading": "جارٍ تحميل مسار الصفقات...",
+    "loadError": "تعذّر تحميل مسار الصفقات.",
+    "kpi": {
+      "totalPipelineValue": "إجمالي قيمة المسار",
+      "expectedCommission": "العمولة المتوقعة",
+      "avgDealAge": "متوسط عمر الصفقة",
+      "dealsAtRisk": "صفقات معرضة للخطر",
+      "winRate": "معدل الفوز (6 أشهر)"
+    },
+    "allTypes": "جميع الأنواع",
+    "allAgents": "جميع الوسطاء",
+    "allCommunities": "جميع المجتمعات",
+    "unassigned": "غير مُسند",
+    "boardView": "لوحة",
+    "tableView": "جدول",
+    "noDeals": "لا توجد صفقات",
+    "dealsCount": "{count} صفقة",
+    "table": {
+      "dealId": "رقم الصفقة",
+      "type": "النوع",
+      "property": "العقار",
+      "client": "العميل",
+      "agent": "الوسيط",
+      "value": "القيمة",
+      "commission": "العمولة",
+      "stage": "المرحلة",
+      "daysInStage": "أيام في المرحلة"
+    },
+    "detail": {
+      "propertySection": "العقار",
+      "clientAgentSection": "العميل والوسيط",
+      "financialSection": "التفاصيل المالية",
+      "notesSection": "ملاحظات",
+      "type": "النوع",
+      "community": "المجتمع",
+      "building": "المبنى",
+      "unit": "الوحدة",
+      "bedrooms": "غرف النوم",
+      "sqft": "المساحة (قدم مربع)",
+      "developer": "المطوّر",
+      "client": "العميل",
+      "nationality": "الجنسية",
+      "agent": "الوسيط",
+      "cobroker": "وسيط مشارك",
+      "transactionValue": "قيمة الصفقة",
+      "commissionRate": "نسبة العمولة",
+      "grossCommission": "إجمالي العمولة",
+      "vat": "ضريبة القيمة المضافة (5%)",
+      "agentSplit": "حصة الوسيط",
+      "agentEarns": "يكسب الوسيط",
+      "agencyKeeps": "تحتفظ الوكالة بـ",
+      "status": "الحالة",
+      "daysInCurrentStage": "الأيام في المرحلة الحالية",
+      "daysSuffix": "{count} يوم"
+    }
+  },
+  "leads": {
+    "loading": "جارٍ تحميل تحليلات مصادر العملاء المحتملين...",
+    "loadError": "تعذّر تحميل تحليلات العملاء المحتملين.",
+    "sourceOverview": {
+      "title": "نظرة عامة على مصادر العملاء المحتملين",
+      "totalLeads": "{count} إجمالي العملاء المحتملين",
+      "leadsSuffix": "{count} عميل محتمل"
+    },
+    "qualityMatrix": {
+      "title": "مصفوفة جودة المصادر",
+      "subtitle": "الحجم مقابل التحويل. حجم الفقاعة يمثل العمولة المكتسبة. أعلى اليمين هو أفضل مصدر لديك.",
+      "leadsReceived": "العملاء المحتملون المستلمون",
+      "conversionPercent": "نسبة التحويل %",
+      "leadsAndConversion": "{leads} عميل محتمل · {rate}% تحويل",
+      "commissionSuffix": "عمولة AED {amount}"
+    },
+    "portalRoi": {
+      "title": "مقارنة عائد استثمار البوابات",
+      "subtitle": "أين يجب أن تنفق ميزانية البوابات؟",
+      "source": "المصدر",
+      "leads": "العملاء المحتملون",
+      "deals": "الصفقات",
+      "conversion": "التحويل",
+      "avgDealValue": "متوسط قيمة الصفقة",
+      "commissionEarned": "العمولة المكتسبة",
+      "estMonthlyCost": "التكلفة الشهرية التقديرية",
+      "roi": "العائد على الاستثمار"
+    },
+    "responseTime": {
+      "title": "أثر سرعة الاستجابة",
+      "subtitle": "معدل التحويل حسب سرعة الاستجابة",
+      "conversion": "التحويل",
+      "tip": "العملاء المحتملون الذين يتم التواصل معهم خلال 5 دقائق يتحولون بمعدل 3 أضعاف. درّب الوسطاء على الاستجابة بشكل أسرع."
+    },
+    "trend": {
+      "title": "اتجاه العملاء المحتملين عبر الزمن",
+      "subtitle": "العملاء المحتملون المستلمون شهريًا حسب المصدر"
+    },
+    "lossAnalysis": {
+      "title": "تحليل فقدان العملاء المحتملين",
+      "subtitle": "أسباب فقدان العملاء المحتملين",
+      "count": "العدد",
+      "leadsSuffix": "{count} عميل محتمل"
+    }
+  },
+  "commission": {
+    "loading": "جارٍ تحميل بيانات العمولة...",
+    "loadError": "تعذّر تحميل بيانات العمولة.",
+    "summary": {
+      "totalYtd": "إجمالي العمولة (السنة حتى الآن)",
+      "thisMonth": "هذا الشهر",
+      "pendingCollection": "التحصيل المعلّق",
+      "overdue": "متأخر (30+ يومًا)"
+    },
+    "byAgent": {
+      "title": "العمولة حسب الوسيط (السنة حتى الآن)",
+      "subtitle": "مدفوعة مقابل معلّقة مقابل متأخرة",
+      "paid": "مدفوعة",
+      "pending": "معلّقة",
+      "overdue": "متأخرة"
+    },
+    "calculator": {
+      "title": "حاسبة العمولة",
+      "dealType": "نوع الصفقة",
+      "propertyValue": "قيمة العقار (AED)",
+      "commissionRate": "نسبة العمولة (%)",
+      "agentSplit": "حصة الوسيط (%)",
+      "isCobroker": "صفقة بوسيط مشارك؟",
+      "no": "لا",
+      "yes": "نعم",
+      "cobrokerSplit": "حصة الوسيط المشارك (%)",
+      "grossCommission": "إجمالي العمولة",
+      "vat": "ضريبة القيمة المضافة (5%)",
+      "totalWithVat": "الإجمالي شاملاً الضريبة",
+      "cobrokerPays": "يدفع الوسيط المشارك",
+      "agentEarns": "يكسب الوسيط",
+      "agencyKeeps": "تحتفظ الوكالة بـ"
+    },
+    "timeline": {
+      "title": "الجدول الزمني للعمولة",
+      "subtitle": "العمولة الشهرية حسب نوع الصفقة، مع اتجاه النمو",
+      "sales": "المبيعات",
+      "rentals": "الإيجارات",
+      "offPlan": "على الخارطة",
+      "total": "الإجمالي"
+    },
+    "pendingPayments": {
+      "title": "المدفوعات المعلّقة",
+      "dealId": "رقم الصفقة",
+      "property": "العقار",
+      "client": "العميل",
+      "agent": "الوسيط",
+      "commission": "العمولة",
+      "invoiceNumber": "رقم الفاتورة",
+      "status": "الحالة",
+      "dueDate": "تاريخ الاستحقاق",
+      "daysOverdue": "(متأخر {count} يوم)"
+    }
+  },
+  "communities": {
+    "loading": "جارٍ تحميل تحليلات المجتمعات...",
+    "loadError": "تعذّر تحميل بيانات المجتمعات.",
+    "table": {
+      "community": "المجتمع",
+      "totalDeals": "إجمالي الصفقات",
+      "avgSalePrice": "متوسط سعر البيع",
+      "avgRent": "متوسط الإيجار",
+      "activeListings": "الإعلانات النشطة",
+      "avgDaysToClose": "متوسط أيام الإغلاق",
+      "topAgent": "أفضل وسيط",
+      "trend": "الاتجاه",
+      "dealMixTitle": "{community}: مزيج الصفقات",
+      "sales": "المبيعات",
+      "rentals": "الإيجارات",
+      "offPlan": "على الخارطة"
+    },
+    "heatmap": {
+      "title": "خريطة حرارية للمجتمعات",
+      "subtitle": "الحجم = عدد الصفقات، كثافة اللون = متوسط العمولة المكتسبة",
+      "tooltip": "{community}: {deals} صفقة، متوسط عمولة AED {commission}"
+    },
+    "priceTrend": {
+      "title": "اتجاهات الأسعار حسب المجتمع",
+      "subtitle": "متوسط سعر البيع لكل قدم مربع، آخر 12 شهرًا (اختر حتى 5)",
+      "tooltipSuffix": "AED {value}/قدم مربع"
+    },
+    "dealTypeByCommunity": {
+      "title": "نوع الصفقة حسب المجتمع",
+      "subtitle": "أفضل 10 مجتمعات من حيث الحجم",
+      "sale": "بيع",
+      "rental": "إيجار",
+      "offPlan": "على الخارطة"
+    }
+  },
+  "insights": {
+    "loading": "جارٍ تحميل الرؤى...",
+    "loadError": "تعذّر تحميل الرؤى.",
+    "genericError": "تعذّر إنشاء الرؤى",
+    "title": "رؤى الأداء بالذكاء الاصطناعي",
+    "subtitle": "توصيات مُنشأة تلقائيًا من بيانات وكالتك",
+    "generateButton": "إنشاء رؤى جديدة",
+    "emptyTitle": "لا توجد رؤى بعد",
+    "emptyDescription": "اضغط على \"إنشاء رؤى جديدة\" للبدء.",
+    "recommendation": "التوصية: ",
+    "severity": {
+      "opportunity": "فرصة",
+      "critical": "حرج",
+      "warning": "تحذير",
+      "info": "معلومة"
+    }
+  },
+  "settings": {
+    "agencyInfo": {
+      "title": "معلومات الوكالة",
+      "companyName": "اسم الشركة",
+      "reraBrn": "RERA BRN"
+    },
+    "commissionDefaults": {
+      "title": "إعدادات العمولة الافتراضية",
+      "saleRate": "نسبة عمولة البيع (%)",
+      "rentalRate": "نسبة عمولة الإيجار (%)",
+      "defaultAgentSplit": "حصة الوسيط الافتراضية (%)"
+    },
+    "monthlyTargets": {
+      "title": "الأهداف الشهرية (لكل وسيط)",
+      "dealsPerAgent": "الصفقات لكل وسيط",
+      "commissionPerAgent": "العمولة لكل وسيط (AED)"
+    },
+    "displayAlerts": {
+      "title": "العرض والتنبيهات",
+      "currencyDisplay": "عرض العملة",
+      "responseTimeTarget": "هدف وقت الاستجابة (دقائق)"
+    },
+    "save": "حفظ الإعدادات",
+    "saved": "تم الحفظ",
+    "dangerZone": {
+      "title": "منطقة الخطر",
+      "description": "يحذف جميع الوسطاء والعملاء المحتملين والصفقات والرؤى، ثم يُعيد إنشاء بيانات تجريبية جديدة. لا يمكن التراجع عن هذا الإجراء.",
+      "resetSuccess": "تمت إعادة تعيين البيانات التجريبية. أعد تحميل أي صفحات مفتوحة لرؤية البيانات الجديدة.",
+      "resetButton": "إعادة تعيين البيانات التجريبية",
+      "genericError": "تعذّر إعادة تعيين البيانات التجريبية",
+      "confirmTitle": "هل تريد إعادة تعيين جميع البيانات التجريبية؟",
+      "confirmDescription": "سيؤدي هذا إلى حذف جميع الوسطاء والعملاء المحتملين والصفقات والرؤى الحالية نهائيًا، ثم إنشاء بيانات تجريبية جديدة. لا يمكن التراجع عن هذا الإجراء.",
+      "cancel": "إلغاء",
+      "confirmButton": "نعم، أعد تعيين البيانات"
+    }
+  }
+}
