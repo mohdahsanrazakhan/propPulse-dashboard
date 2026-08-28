@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { LogOut, Menu } from "lucide-react";
+import { Languages, LogOut, Menu } from "lucide-react";
 import { signOut } from "next-auth/react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { NAV_ITEMS } from "@/lib/nav-items";
 import { cn } from "@/lib/utils";
 import { PropPulseLogo } from "@/components/shared/PropPulseLogo";
+import { LOCALE_NATIVE_LABEL, useLocaleSwitch } from "./LocaleSwitcher";
 
 export function MobileNav({ company, reraBrn }: { company: string; reraBrn: string }) {
   const t = useTranslations("nav");
@@ -20,6 +21,7 @@ export function MobileNav({ company, reraBrn }: { company: string; reraBrn: stri
   const loginCallbackUrl = `/${locale}/login`;
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const { switchLocale, isPending: localePending, otherLocale } = useLocaleSwitch();
 
   const items = useMemo(
     () => NAV_ITEMS.map((item) => ({ ...item, label: t(item.labelKey) })),
@@ -71,8 +73,20 @@ export function MobileNav({ company, reraBrn }: { company: string; reraBrn: stri
           <p className="truncate font-medium text-sidebar-foreground/90">{company}</p>
           <p>{tCommon("reraBrn", { brn: reraBrn })}</p>
           <button
+            onClick={() => {
+              switchLocale();
+              setOpen(false);
+            }}
+            disabled={localePending}
+            aria-label={tCommon("language")}
+            className="mt-2 flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-sidebar-foreground/60 transition-colors hover:bg-sidebar-accent hover:text-sidebar-accent-foreground disabled:opacity-60"
+          >
+            <Languages className="h-3.5 w-3.5" />
+            {LOCALE_NATIVE_LABEL[otherLocale]}
+          </button>
+          <button
             onClick={() => signOut({ callbackUrl: loginCallbackUrl })}
-            className="mt-2 flex items-center gap-2 rounded-md px-2 py-1.5 text-sidebar-foreground/60 transition-colors hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
+            className="mt-1 flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-sidebar-foreground/60 transition-colors hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
           >
             <LogOut className="h-3.5 w-3.5" />
             {tCommon("logout")}

@@ -55,7 +55,9 @@ export function Header({
       </div>
 
       <div className="flex items-center gap-1.5">
-        <LocaleSwitcher />
+        {/* On small screens the language switch moves into the mobile nav to
+            save header space (see MobileNav). */}
+        <LocaleSwitcher className="hidden md:flex" />
         <NotificationBell />
 
         <DropdownMenu>
