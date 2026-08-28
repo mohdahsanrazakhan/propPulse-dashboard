@@ -1,5 +1,6 @@
 "use client";
 
+import * as React from "react";
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { ArrowDown, ArrowUp, ArrowUpDown } from "lucide-react";
@@ -29,12 +30,18 @@ export function DataTable<T>({
   emptyLabel,
   onRowClick,
   rowKey,
+  expandedRowKey,
+  renderExpandedRow,
 }: {
   columns: DataTableColumn<T>[];
   data: T[];
   emptyLabel?: string;
   onRowClick?: (row: T) => void;
   rowKey: (row: T) => string;
+  /** Key of the row whose expanded content should render directly beneath it. */
+  expandedRowKey?: string | null;
+  /** Renders detail content inside a full-width row immediately under the matching row. */
+  renderExpandedRow?: (row: T) => React.ReactNode;
 }) {
   const t = useTranslations("table");
   const [sortKey, setSortKey] = useState<string | null>(null);
@@ -101,26 +108,38 @@ export function DataTable<T>({
           </TableRow>
         </TableHeader>
         <TableBody>
-          {sorted.map((row) => (
-            <TableRow
-              key={rowKey(row)}
-              className={cn(onRowClick && "cursor-pointer")}
-              onClick={() => onRowClick?.(row)}
-            >
-              {columns.map((col) => (
-                <TableCell
-                  key={col.key}
-                  className={cn(
-                    col.align === "right" && "text-right",
-                    col.align === "center" && "text-center",
-                    col.className
-                  )}
+          {sorted.map((row) => {
+            const key = rowKey(row);
+            const isExpanded = renderExpandedRow != null && expandedRowKey === key;
+            return (
+              <React.Fragment key={key}>
+                <TableRow
+                  className={cn(onRowClick && "cursor-pointer")}
+                  onClick={() => onRowClick?.(row)}
                 >
-                  {col.render(row)}
-                </TableCell>
-              ))}
-            </TableRow>
-          ))}
+                  {columns.map((col) => (
+                    <TableCell
+                      key={col.key}
+                      className={cn(
+                        col.align === "right" && "text-right",
+                        col.align === "center" && "text-center",
+                        col.className
+                      )}
+                    >
+                      {col.render(row)}
+                    </TableCell>
+                  ))}
+                </TableRow>
+                {isExpanded && (
+                  <TableRow className="hover:bg-transparent">
+                    <TableCell colSpan={columns.length} className="p-0">
+                      {renderExpandedRow(row)}
+                    </TableCell>
+                  </TableRow>
+                )}
+              </React.Fragment>
+            );
+          })}
         </TableBody>
       </Table>
     </div>

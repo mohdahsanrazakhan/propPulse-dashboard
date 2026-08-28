@@ -30,7 +30,10 @@ export function CommunityHeatmap({ data }: { data: CommunitiesData["heatmap"] })
                   style={{
                     width: size,
                     height: size,
-                    background: `color-mix(in srgb, var(--accent) ${Math.round(intensity * 100)}%, var(--muted))`,
+                    // Mix the accent against a dark indigo base (not the light
+                    // --muted) so low-commission bubbles stay dark enough for the
+                    // white label text to remain readable in both themes.
+                    background: `color-mix(in srgb, var(--accent) ${Math.round(30 + intensity * 60)}%, #312E81)`,
                   }}
                   title={t("tooltip", { community: d.community, deals: d.deals, commission: d.avgCommission.toLocaleString() })}
                 >

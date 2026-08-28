@@ -60,21 +60,24 @@ export function CommunityTable({ data }: { data: Row[] }) {
     },
   ];
 
-  const row = data.find((r) => r.community === expanded);
-
   return (
     <div className="space-y-3">
-      <DataTable columns={columns} data={data} rowKey={(r) => r.community} />
-      {row && (
-        <div className="rounded-lg border border-border bg-muted/30 p-4 text-sm">
-          <p className="mb-2 font-medium text-foreground">{t("dealMixTitle", { community: row.community })}</p>
-          <div className="flex gap-6 text-muted-foreground">
-            <span>{t("sales")}: <span className="font-medium text-foreground">{row.saleCount}</span></span>
-            <span>{t("rentals")}: <span className="font-medium text-foreground">{row.rentalCount}</span></span>
-            <span>{t("offPlan")}: <span className="font-medium text-foreground">{row.offPlanCount}</span></span>
+      <DataTable
+        columns={columns}
+        data={data}
+        rowKey={(r) => r.community}
+        expandedRowKey={expanded}
+        renderExpandedRow={(row) => (
+          <div className="border-t border-border bg-muted/30 p-4 text-sm">
+            <p className="mb-2 font-medium text-foreground">{t("dealMixTitle", { community: row.community })}</p>
+            <div className="flex gap-6 text-muted-foreground">
+              <span>{t("sales")}: <span className="font-medium text-foreground">{row.saleCount}</span></span>
+              <span>{t("rentals")}: <span className="font-medium text-foreground">{row.rentalCount}</span></span>
+              <span>{t("offPlan")}: <span className="font-medium text-foreground">{row.offPlanCount}</span></span>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      />
     </div>
   );
 }
